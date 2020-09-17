@@ -1,0 +1,45 @@
+ ul {
+    list-style: none;
+    margin: auto;
+    
+    
+}
+.block {
+    border: 1px solid #BFBFBF;
+    height: 100%;
+    background-color: gainsboro;
+    border-radius: 3px;
+    
+}
+.main{
+    padding-top: 3%;
+    margin: auto;
+}
+
+.list{
+   
+    width: 20ch;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#btn {
+  padding-top: 1%;
+  margin: auto;
+  margin-left: 2%;
+}
+.btn {
+    width: 15ch;
+}
+
+.lable {
+    margin-bottom: 0;
+}
+
+.lable{
+    font-size: 1ch;
+}
+
+.icon {
+    cursor: pointer;
+}

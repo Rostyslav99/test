@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Components from './components/index';
+import ErrorBoundry from './error-boundry';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import BikesSevice from './service';
+import { Bprovider } from './contex';
+import { Provider } from 'react-redux';
+import store from './store';
+class App extends Component {
+  bikesSevice = new BikesSevice();
+  render() {
+
+    return (
+      <Provider store={store}>
+        <Bprovider value={this.bikesSevice}>
+          <ErrorBoundry>
+            <Components />
+          </ErrorBoundry>
+        </Bprovider>
+      </Provider>
+    );
+  }
 }
 
 export default App;

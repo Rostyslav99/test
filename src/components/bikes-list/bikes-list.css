@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    margin: auto;
+    
+    
+}
+
+.main{
+    padding-top: 3%;
+    margin: auto;
+    
+}
+
+.item{
+    float: left;
+    margin-bottom: 2%
+}
+
+#name{
+    font-size: 20px;
+}
+
+.but {
+    margin-right: 1%;
+
+}
