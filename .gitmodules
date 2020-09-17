@@ -1,3 +1,6 @@
 [submodule "full-stack-test-task"]
 	path = full-stack-test-task
 	url = https://github.com/Rostyslav99/full-stack-test-task.git
+[submodule "full-test-task"]
+	path = full-test-task
+	url = https://rostk@bitbucket.org/rostk/full-test-task.git
